@@ -25,7 +25,7 @@ export const LifeCoachingSection: React.FC<LifeCoachingSectionProps> = ({ t, onE
         <div className="text-center max-w-3xl mx-auto mb-14">
           <div className="inline-flex items-center gap-1.5 text-xs font-bold tracking-widest text-[#0091B9] uppercase mb-2">
             <Compass className="w-3.5 h-3.5 text-[#0091B9]" />
-            <span>Conscious Personal Transformation</span>
+            <span>{t.services.coaching.title}</span>
           </div>
           <h2 className="font-heading text-3xl sm:text-4xl font-bold text-[#004E9B] tracking-tight mb-4">
             {t.coachingSection.heading}
@@ -58,10 +58,10 @@ export const LifeCoachingSection: React.FC<LifeCoachingSectionProps> = ({ t, onE
         {/* Philosophy Callout Card */}
         <div className="bg-gradient-to-r from-[#004E9B] via-[#004E9B] to-[#0091B9] text-white rounded-3xl p-8 sm:p-10 shadow-lg mb-12 max-w-4xl mx-auto text-center">
           <h3 className="font-heading text-2xl sm:text-3xl font-bold mb-3">
-            Structured Support for Authentic Growth
+            {t.coachingSection.heading}
           </h3>
           <p className="text-sm sm:text-base text-white/90 max-w-2xl mx-auto leading-relaxed mb-6">
-            Life coaching with Dipti Awasthi focuses on honoring your unique path. Rather than giving rigid instructions, we explore your intrinsic motivations, navigate crossroads, and create sustainable alignment.
+            {t.services.coaching.desc}
           </p>
           <button
             onClick={onEnquire}

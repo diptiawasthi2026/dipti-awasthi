@@ -108,7 +108,17 @@ export const en = {
     note: "Your numbers can offer a different perspective on your journey.",
     cta: "Enquire for Numerology Reading",
     interactiveTitle: "Free Vedic Numerology Calculator",
-    interactiveSubtitle: "Enter your date of birth to reveal your Mulank, Bhagyank, and planetary vibration."
+    interactiveSubtitle: "Enter your date of birth to reveal your Mulank, Bhagyank, and planetary vibration.",
+    calcButton: "Calculate Numbers",
+    driverLabel: "Mulank (Driver)",
+    driverDesc: "Core Nature & Personality",
+    destinyLabel: "Bhagyank (Destiny)",
+    destinyDesc: "Life Path & Purpose",
+    yearLabel: "Personal Year",
+    yearDesc: "Current Solar Energy Cycle",
+    rulingPlanetLabel: "Ruling Planetary Vibration",
+    keyStrengthsLabel: "Key Strengths & Resonance",
+    bookFullChart: "Book Full Personalized Birth Chart Reading"
   },
 
   tarotSection: {
@@ -125,7 +135,13 @@ export const en = {
     cta: "Enquire for Tarot Reading",
     disclaimer: "Tarot is offered as a tool for reflection and guidance and does not guarantee future outcomes.",
     interactiveTitle: "Daily Tarot Reflection Card Draw",
-    interactiveSubtitle: "Center your thoughts and draw a card for mindful reflection on your day."
+    interactiveSubtitle: "Center your thoughts and draw a card for mindful reflection on your day.",
+    drawButton: "Draw a Reflection Card",
+    drawingText: "Drawing Mindful Card...",
+    drawAnother: "Draw Another",
+    majorArcanaLabel: "Major Arcana Archetype",
+    insightLabel: "Reflective Insight",
+    contemplationLabel: "Contemplation Question"
   },
 
   coachingSection: {
@@ -168,6 +184,17 @@ export const en = {
       "Life Direction",
       "Numerology Patterns",
       "Tarot Guidance"
+    ],
+    cards: [
+      { title: "Career Guidance", desc: "Navigating workplace crossroads, career transitions, and natural professional talents." },
+      { title: "Business Clarity", desc: "Entrepreneurial timing, name vibration assessment, and conscious business strategy." },
+      { title: "Relationships & Harmony", desc: "Reflecting on emotional bonds, mutual communication, and relationship dynamics." },
+      { title: "Personal Growth", desc: "Cultivating mindful self-awareness, personal habits, and emotional resilience." },
+      { title: "Life Decisions", desc: "Objective, reflective support when facing complex dilemmas and major choices." },
+      { title: "Self-Confidence", desc: "Transforming self-doubt into quiet grounded strength and authentic presence." },
+      { title: "Life Direction", desc: "Reconnecting with purposeful orientation when feeling stagnant or in transition." },
+      { title: "Vedic Numerology", desc: "Analyzing Mulank, Bhagyank, name resonance, and personal year cycles." },
+      { title: "Tarot Guidance", desc: "Archetypal reflections to explore subconscious dynamics and emerging perspectives." }
     ]
   },
 
@@ -263,7 +290,10 @@ export const en = {
     instagramLabel: "Instagram for Queries",
     instagramNote: "Connect on Instagram for queries, updates and inspiration",
     emailButton: "Email for Enquiry",
-    instagramButton: "Connect on Instagram"
+    instagramButton: "Connect on Instagram",
+    facebookLabel: "Facebook Official",
+    facebookNote: "Follow for spiritual updates, Vedic insights & articles",
+    facebookButton: "Connect on Facebook"
   },
 
   enquiry: {

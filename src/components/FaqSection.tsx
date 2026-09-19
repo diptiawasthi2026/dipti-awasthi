@@ -22,7 +22,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ t, onOpenEnquiry }) => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-1.5 text-xs font-bold tracking-widest text-[#0091B9] uppercase mb-2">
             <HelpCircle className="w-3.5 h-3.5 text-[#0091B9]" />
-            <span>Clarity & Trust</span>
+            <span>{t.nav.faq}</span>
           </div>
           <h2 className="font-heading text-3xl sm:text-4xl font-bold text-[#004E9B] tracking-tight mb-4">
             {t.faq.heading}
@@ -71,15 +71,15 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ t, onOpenEnquiry }) => {
         {/* Still have questions? */}
         <div className="p-6 rounded-2xl bg-[#BAE4F0]/30 border border-[#BAE4F0] text-center max-w-xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="text-left">
-            <div className="text-sm font-bold text-[#004E9B]">Have a question not listed here?</div>
-            <div className="text-xs text-[#5D6B78]">Connect directly with Dipti for guidance inquiries</div>
+            <div className="text-sm font-bold text-[#004E9B]">{t.enquiry.heading}</div>
+            <div className="text-xs text-[#5D6B78]">{t.directConnection.desc}</div>
           </div>
           <button
             onClick={onOpenEnquiry}
             className="px-5 py-2.5 rounded-xl bg-[#004E9B] hover:bg-[#003c77] text-white text-xs sm:text-sm font-semibold transition-colors shrink-0 flex items-center gap-1.5"
           >
             <Mail className="w-3.5 h-3.5" />
-            <span>Send Enquiry</span>
+            <span>{t.about.sendEnquiry}</span>
           </button>
         </div>
 

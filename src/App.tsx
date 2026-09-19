@@ -194,6 +194,7 @@ export default function App() {
         isOpen={isLegalOpen}
         onClose={() => setIsLegalOpen(false)}
         initialTab={legalTab}
+        t={t}
       />
     </div>
   );

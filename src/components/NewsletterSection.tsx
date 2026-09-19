@@ -26,7 +26,7 @@ export const NewsletterSection: React.FC<NewsletterSectionProps> = ({ t }) => {
         <div className="p-8 sm:p-12 rounded-3xl bg-white border border-[#BAE4F0] shadow-sm">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#BAE4F0]/40 text-[#004E9B] text-xs font-semibold mb-3">
             <Sparkles className="w-3.5 h-3.5 text-[#0091B9]" />
-            <span>Mindful Newsletter</span>
+            <span>{t.newsletter.heading}</span>
           </div>
 
           <h3 className="font-heading text-2xl sm:text-3xl font-bold text-[#004E9B] mb-2">

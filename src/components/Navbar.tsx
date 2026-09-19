@@ -61,7 +61,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             <Sparkles className="w-4 h-4 text-[#FFD500] fill-[#FFD500]" />
           </span>
           <span className="text-[11px] sm:text-xs font-medium text-[#5D6B78] tracking-wider uppercase">
-            Vedic Numerology • Tarot • Life Coaching
+            {t.title}
           </span>
         </a>
 

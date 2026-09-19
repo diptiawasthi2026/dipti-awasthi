@@ -50,7 +50,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({ t, preselectedService 
         <div className="text-center max-w-2xl mx-auto mb-12">
           <div className="inline-flex items-center gap-1.5 text-xs font-bold tracking-widest text-[#0091B9] uppercase mb-2">
             <Mail className="w-3.5 h-3.5 text-[#0091B9]" />
-            <span>Consultation Inquiries</span>
+            <span>{t.nav.contact}</span>
           </div>
           <h2 className="font-heading text-3xl sm:text-4xl font-bold text-[#004E9B] tracking-tight mb-3">
             {t.enquiry.heading}
@@ -160,10 +160,10 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({ t, preselectedService 
                     onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                     className="w-full px-4 py-3 rounded-xl border border-[#BAE4F0] bg-[#F8FCFE] focus:bg-white text-sm text-[#172033] focus:outline-none focus:ring-2 focus:ring-[#0091B9] transition-all"
                   >
-                    <option value="Vedic Numerology">Vedic Numerology</option>
-                    <option value="Tarot Reading">Tarot Reading</option>
-                    <option value="Life Coaching">Life Coaching</option>
-                    <option value="General Enquiry">General Guidance Enquiry</option>
+                    <option value="Vedic Numerology">{t.services.numerology.title}</option>
+                    <option value="Tarot Reading">{t.services.tarot.title}</option>
+                    <option value="Life Coaching">{t.services.coaching.title}</option>
+                    <option value="General Guidance">{t.nav.services}</option>
                   </select>
                 </div>
 
@@ -177,9 +177,9 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({ t, preselectedService 
                     onChange={(e) => setFormData({ ...formData, sessionType: e.target.value as any })}
                     className="w-full px-4 py-3 rounded-xl border border-[#BAE4F0] bg-[#F8FCFE] focus:bg-white text-sm text-[#172033] focus:outline-none focus:ring-2 focus:ring-[#0091B9] transition-all"
                   >
-                    <option value="Video Consultation">Video Consultation (Google Meet / Zoom)</option>
-                    <option value="Audio Consultation">Audio Consultation</option>
-                    <option value="Chat Consultation">Chat Consultation</option>
+                    <option value="Video Consultation">Video (Google Meet / Zoom)</option>
+                    <option value="Audio Consultation">Audio Call</option>
+                    <option value="Chat Consultation">Chat Guidance</option>
                   </select>
                 </div>
               </div>

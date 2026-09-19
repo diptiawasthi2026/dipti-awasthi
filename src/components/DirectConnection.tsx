@@ -13,7 +13,7 @@ export const DirectConnection: React.FC<DirectConnectionProps> = ({ t }) => {
         
         <div className="inline-flex items-center gap-1.5 text-xs font-bold tracking-widest text-[#0091B9] uppercase mb-2">
           <MessageCircle className="w-3.5 h-3.5 text-[#0091B9]" />
-          <span>Direct Connection</span>
+          <span>{t.directConnection.heading}</span>
         </div>
 
         <h2 className="font-heading text-3xl sm:text-4xl font-bold text-[#004E9B] tracking-tight mb-3">
@@ -77,7 +77,7 @@ export const DirectConnection: React.FC<DirectConnectionProps> = ({ t }) => {
               className="w-full py-3 rounded-xl bg-[#FF6500] hover:bg-[#e05900] text-white font-semibold text-xs sm:text-sm transition-colors flex items-center justify-center gap-2 shadow-xs"
             >
               <Instagram className="w-4 h-4" />
-              <span>Connect on Instagram</span>
+              <span>{t.directConnection.instagramButton || "Connect on Instagram"}</span>
             </a>
           </div>
 
@@ -88,10 +88,10 @@ export const DirectConnection: React.FC<DirectConnectionProps> = ({ t }) => {
                 <Facebook className="w-6 h-6" />
               </div>
               <h3 className="font-heading text-lg font-bold text-[#004E9B] mb-1">
-                Facebook Official
+                {t.directConnection.facebookLabel || "Facebook Official"}
               </h3>
               <p className="text-xs text-[#5D6B78] mb-3">
-                Follow for spiritual updates, Vedic insights & articles
+                {t.directConnection.facebookNote || "Follow for spiritual updates, Vedic insights & articles"}
               </p>
               <div className="text-xs font-semibold text-[#004E9B] break-all bg-white px-3 py-2 rounded-lg border border-[#BAE4F0]/60 mb-6">
                 Dipti Awasthi Official
@@ -105,7 +105,7 @@ export const DirectConnection: React.FC<DirectConnectionProps> = ({ t }) => {
               className="w-full py-3 rounded-xl bg-[#004E9B] hover:bg-[#003c77] text-white font-semibold text-xs sm:text-sm transition-colors flex items-center justify-center gap-2 shadow-xs"
             >
               <Facebook className="w-4 h-4" />
-              <span>Connect on Facebook</span>
+              <span>{t.directConnection.facebookButton || "Connect on Facebook"}</span>
             </a>
           </div>
 

@@ -16,7 +16,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ t, onSelectSer
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-1.5 text-xs font-bold tracking-widest text-[#0091B9] uppercase mb-2">
             <Sparkles className="w-3.5 h-3.5 text-[#0091B9]" />
-            <span>Personalized Offerings</span>
+            <span>{t.nav.services}</span>
           </div>
           <h2 className="font-heading text-3xl sm:text-4xl font-bold text-[#004E9B] tracking-tight mb-4">
             {t.services.heading}
@@ -61,10 +61,10 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ t, onSelectSer
                 <ArrowRight className="w-3.5 h-3.5" />
               </a>
               <button
-                onClick={() => onSelectService('Vedic Numerology')}
+                onClick={() => onSelectService(t.services.numerology.title)}
                 className="w-full py-2 rounded-xl bg-gray-50 hover:bg-[#BAE4F0]/30 text-[#0091B9] text-xs font-semibold transition-colors"
               >
-                Enquire for Session
+                {t.pricing.sendEnquiry}
               </button>
             </div>
           </div>
@@ -72,7 +72,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ t, onSelectSer
           {/* Service 2: Tarot Reading */}
           <div className="bg-white rounded-2xl p-8 border border-[#BAE4F0] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 relative">
             <div className="absolute top-4 right-4 bg-[#FFD500]/20 text-[#004E9B] text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
-              Intuitive
+              {t.founderSignature}
             </div>
             <div>
               <div className="w-14 h-14 rounded-2xl bg-[#BAE4F0]/40 text-[#0091B9] flex items-center justify-center mb-6 group-hover:bg-[#0091B9] group-hover:text-white transition-colors">
@@ -104,10 +104,10 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ t, onSelectSer
                 <ArrowRight className="w-3.5 h-3.5" />
               </a>
               <button
-                onClick={() => onSelectService('Tarot Reading')}
+                onClick={() => onSelectService(t.services.tarot.title)}
                 className="w-full py-2 rounded-xl bg-gray-50 hover:bg-[#BAE4F0]/30 text-[#0091B9] text-xs font-semibold transition-colors"
               >
-                Enquire for Session
+                {t.pricing.sendEnquiry}
               </button>
             </div>
           </div>
@@ -144,10 +144,10 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ t, onSelectSer
                 <ArrowRight className="w-3.5 h-3.5" />
               </a>
               <button
-                onClick={() => onSelectService('Life Coaching')}
+                onClick={() => onSelectService(t.services.coaching.title)}
                 className="w-full py-2 rounded-xl bg-gray-50 hover:bg-[#BAE4F0]/30 text-[#0091B9] text-xs font-semibold transition-colors"
               >
-                Enquire for Session
+                {t.pricing.sendEnquiry}
               </button>
             </div>
           </div>

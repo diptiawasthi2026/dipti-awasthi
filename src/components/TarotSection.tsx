@@ -31,7 +31,7 @@ export const TarotSection: React.FC<TarotSectionProps> = ({ t, onEnquire }) => {
         <div className="text-center max-w-3xl mx-auto mb-14">
           <div className="inline-flex items-center gap-1.5 text-xs font-bold tracking-widest text-[#0091B9] uppercase mb-2">
             <Eye className="w-3.5 h-3.5 text-[#0091B9]" />
-            <span>Intuitive Archetypal Wisdom</span>
+            <span>{t.services.tarot.title}</span>
           </div>
           <h2 className="font-heading text-3xl sm:text-4xl font-bold text-[#004E9B] tracking-tight mb-4">
             {t.tarotSection.heading}
@@ -68,7 +68,7 @@ export const TarotSection: React.FC<TarotSectionProps> = ({ t, onEnquire }) => {
         <div className="bg-white rounded-3xl p-6 sm:p-10 border-2 border-[#BAE4F0] shadow-md max-w-3xl mx-auto mb-12 text-center">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#BAE4F0]/40 text-[#004E9B] text-xs font-semibold mb-3">
             <Sparkles className="w-3.5 h-3.5 text-[#0091B9]" />
-            <span>Daily Reflective Practice</span>
+            <span>{t.tarotSection.interactiveTitle}</span>
           </div>
           <h3 className="font-heading text-2xl font-bold text-[#004E9B] mb-2">
             {t.tarotSection.interactiveTitle}
@@ -87,12 +87,12 @@ export const TarotSection: React.FC<TarotSectionProps> = ({ t, onEnquire }) => {
                 {isDrawing ? (
                   <>
                     <RefreshCw className="w-4 h-4 animate-spin text-[#FFD500]" />
-                    <span>Drawing Mindful Card...</span>
+                    <span>{t.tarotSection.drawingText || "Drawing Mindful Card..."}</span>
                   </>
                 ) : (
                   <>
                     <Eye className="w-4 h-4 text-[#FFD500]" />
-                    <span>Draw a Reflection Card</span>
+                    <span>{t.tarotSection.drawButton || "Draw a Reflection Card"}</span>
                   </>
                 )}
               </button>
@@ -103,7 +103,7 @@ export const TarotSection: React.FC<TarotSectionProps> = ({ t, onEnquire }) => {
             <div className="mt-6 p-6 sm:p-8 rounded-2xl bg-[#F8FCFE] border border-[#BAE4F0] text-left animate-fade-in">
               <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-4 border-b border-[#BAE4F0]/60 mb-4">
                 <div>
-                  <span className="text-[11px] font-bold text-[#0091B9] uppercase tracking-wider">Major Arcana Archetype</span>
+                  <span className="text-[11px] font-bold text-[#0091B9] uppercase tracking-wider">{t.tarotSection.majorArcanaLabel || "Major Arcana Archetype"}</span>
                   <h4 className="font-heading text-2xl font-bold text-[#004E9B]">{selectedCard.name}</h4>
                 </div>
                 <button
@@ -111,7 +111,7 @@ export const TarotSection: React.FC<TarotSectionProps> = ({ t, onEnquire }) => {
                   className="text-xs text-[#0091B9] hover:text-[#004E9B] font-semibold flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-[#BAE4F0] bg-white hover:bg-[#BAE4F0]/20 transition-colors"
                 >
                   <RefreshCw className="w-3.5 h-3.5" />
-                  <span>Draw Another</span>
+                  <span>{t.tarotSection.drawAnother || "Draw Another"}</span>
                 </button>
               </div>
 
@@ -124,14 +124,14 @@ export const TarotSection: React.FC<TarotSectionProps> = ({ t, onEnquire }) => {
               </div>
 
               <div className="mb-4">
-                <div className="text-xs font-bold text-[#004E9B] uppercase mb-1">Reflective Insight:</div>
+                <div className="text-xs font-bold text-[#004E9B] uppercase mb-1">{t.tarotSection.insightLabel || "Reflective Insight"}:</div>
                 <p className="text-sm text-[#172033] leading-relaxed">
                   {selectedCard.meaning}
                 </p>
               </div>
 
               <div className="p-3.5 rounded-xl bg-white border border-[#BAE4F0]/70 text-xs sm:text-sm text-[#004E9B] font-medium leading-relaxed">
-                <span className="font-bold">Contemplation Question: </span>
+                <span className="font-bold">{t.tarotSection.contemplationLabel || "Contemplation Question"}: </span>
                 {selectedCard.reflectionQuestion}
               </div>
             </div>

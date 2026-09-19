@@ -68,7 +68,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ t, onOpenEnquiry }) 
                 <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl border border-[#BAE4F0] shadow-md flex items-center justify-between">
                   <div>
                     <div className="text-xs font-bold text-[#004E9B]">Dipti Awasthi</div>
-                    <div className="text-[10px] text-[#5D6B78] font-medium">Spiritual Guide & Mentor</div>
+                    <div className="text-[10px] text-[#5D6B78] font-medium">{t.founderSignature}</div>
                   </div>
                   <Sparkles className="w-4 h-4 text-[#FFD500] fill-[#FFD500]" />
                 </div>
@@ -91,7 +91,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ t, onOpenEnquiry }) 
                   title="Upload official photograph of Dipti Awasthi"
                 >
                   <Camera className="w-3.5 h-3.5 text-[#0091B9]" />
-                  <span>{isCustomPhoto ? "Update Client Photo" : "Upload Client Photo"}</span>
+                  <span>{isCustomPhoto ? "Photo" : "Photo"}</span>
                 </button>
                 {isCustomPhoto && (
                   <button
@@ -112,7 +112,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ t, onOpenEnquiry }) 
           <div className="lg:col-span-7">
             <div className="inline-flex items-center gap-1.5 text-xs font-bold tracking-widest text-[#0091B9] uppercase mb-2">
               <Compass className="w-3.5 h-3.5 text-[#0091B9]" />
-              <span>About Dipti Awasthi</span>
+              <span>{t.nav.about}</span>
             </div>
 
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-[#004E9B] tracking-tight mb-2">
@@ -142,18 +142,15 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ t, onOpenEnquiry }) 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
               <div className="p-3 rounded-xl bg-[#F8FCFE] border border-[#BAE4F0]/60">
                 <Heart className="w-4 h-4 text-[#FF6500] mb-1.5" />
-                <div className="text-xs font-bold text-[#004E9B]">Compassionate</div>
-                <div className="text-[11px] text-[#5D6B78]">Empathetic listening</div>
+                <div className="text-xs font-bold text-[#004E9B]">{t.about.pillars?.[0] || 'Empathetic'}</div>
               </div>
               <div className="p-3 rounded-xl bg-[#F8FCFE] border border-[#BAE4F0]/60">
                 <Sparkles className="w-4 h-4 text-[#0091B9] mb-1.5" />
-                <div className="text-xs font-bold text-[#004E9B]">Intuitive</div>
-                <div className="text-[11px] text-[#5D6B78]">Vedic pattern insight</div>
+                <div className="text-xs font-bold text-[#004E9B]">{t.about.pillars?.[1] || 'Intuitive'}</div>
               </div>
               <div className="p-3 rounded-xl bg-[#F8FCFE] border border-[#BAE4F0]/60">
                 <Compass className="w-4 h-4 text-[#FFD500] mb-1.5" />
-                <div className="text-xs font-bold text-[#004E9B]">Conscious</div>
-                <div className="text-[11px] text-[#5D6B78]">Values-aligned growth</div>
+                <div className="text-xs font-bold text-[#004E9B]">{t.about.pillars?.[2] || 'Conscious'}</div>
               </div>
             </div>
 

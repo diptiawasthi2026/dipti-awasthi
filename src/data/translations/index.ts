@@ -1,38 +1,30 @@
 import { LanguageCode } from '../../types';
 import { en, TranslationDict } from './en';
 import { hi } from './hi';
-import { regionalTranslations } from './regional';
+import { mr } from './mr';
+import { pa } from './pa';
+import { bn } from './bn';
+import { te } from './te';
+import { ta } from './ta';
+import { ml } from './ml';
+import { or } from './or';
+
+const translationsMap: Record<LanguageCode, TranslationDict> = {
+  en,
+  hi,
+  mr,
+  pa,
+  bn,
+  te,
+  ta,
+  ml,
+  or
+};
 
 export function getTranslation(lang: LanguageCode): TranslationDict {
-  if (lang === 'hi') {
-    return hi;
-  }
-  if (lang === 'en') {
-    return en;
-  }
-
-  const regional = regionalTranslations[lang];
-  if (!regional) {
-    return en;
-  }
-
-  // Deep merge regional overrides with base English dictionary
-  return {
-    ...en,
-    ...regional,
-    nav: { ...en.nav, ...(regional.nav || {}) },
-    hero: { ...en.hero, ...(regional.hero || {}) },
-    about: { ...en.about, ...(regional.about || {}) },
-    services: { ...en.services, ...(regional.services || {}) },
-    numerologySection: { ...en.numerologySection, ...(regional.numerologySection || {}) },
-    tarotSection: { ...en.tarotSection, ...(regional.tarotSection || {}) },
-    coachingSection: { ...en.coachingSection, ...(regional.coachingSection || {}) },
-    whyChoose: { ...en.whyChoose, ...(regional.whyChoose || {}) },
-    howItWorks: { ...en.howItWorks, ...(regional.howItWorks || {}) },
-    enquiry: { ...en.enquiry, ...(regional.enquiry || {}) },
-    directConnection: { ...en.directConnection, ...(regional.directConnection || {}) },
-    footer: { ...en.footer, ...(regional.footer || {}) },
-  } as TranslationDict;
+  return translationsMap[lang] || en;
 }
 
-export { en, hi };
+export { en, hi, mr, pa, bn, te, ta, ml, or };
+export type { TranslationDict };
+

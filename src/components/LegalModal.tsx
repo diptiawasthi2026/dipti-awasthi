@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import { X, Shield, FileText } from 'lucide-react';
+import { TranslationDict } from '../data/translations/en';
 
 interface LegalModalProps {
   isOpen: boolean;
   onClose: () => void;
   initialTab?: 'privacy' | 'terms';
+  t?: TranslationDict;
 }
 
-export const LegalModal: React.FC<LegalModalProps> = ({ isOpen, onClose, initialTab = 'privacy' }) => {
+export const LegalModal: React.FC<LegalModalProps> = ({ isOpen, onClose, initialTab = 'privacy', t }) => {
   const [tab, setTab] = useState<'privacy' | 'terms'>(initialTab);
 
   if (!isOpen) return null;
@@ -28,7 +30,7 @@ export const LegalModal: React.FC<LegalModalProps> = ({ isOpen, onClose, initial
               }`}
             >
               <Shield className="w-3.5 h-3.5" />
-              <span>Privacy Policy</span>
+              <span>{t?.footer.privacy || 'Privacy Policy'}</span>
             </button>
             <button
               onClick={() => setTab('terms')}
@@ -39,7 +41,7 @@ export const LegalModal: React.FC<LegalModalProps> = ({ isOpen, onClose, initial
               }`}
             >
               <FileText className="w-3.5 h-3.5" />
-              <span>Terms & Conditions</span>
+              <span>{t?.footer.terms || 'Terms & Conditions'}</span>
             </button>
           </div>
 

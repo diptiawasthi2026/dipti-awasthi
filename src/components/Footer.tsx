@@ -49,42 +49,42 @@ export const Footer: React.FC<FooterProps> = ({ t, onOpenPrivacy, onOpenTerms })
             <ul className="space-y-2 text-xs sm:text-sm text-white/80">
               <li>
                 <a href="#about" className="hover:text-[#BAE4F0] transition-colors">
-                  About Dipti Awasthi
+                  {t.nav.about}
                 </a>
               </li>
               <li>
                 <a href="#services" className="hover:text-[#BAE4F0] transition-colors">
-                  Services
+                  {t.nav.services}
                 </a>
               </li>
               <li>
                 <a href="#numerology" className="hover:text-[#BAE4F0] transition-colors">
-                  Vedic Numerology
+                  {t.nav.numerology}
                 </a>
               </li>
               <li>
                 <a href="#tarot" className="hover:text-[#BAE4F0] transition-colors">
-                  Tarot Guidance
+                  {t.nav.tarot}
                 </a>
               </li>
               <li>
                 <a href="#life-coaching" className="hover:text-[#BAE4F0] transition-colors">
-                  Life Coaching
+                  {t.nav.coaching}
                 </a>
               </li>
               <li>
                 <a href="#testimonials" className="hover:text-[#BAE4F0] transition-colors">
-                  Testimonials
+                  {t.nav.testimonials}
                 </a>
               </li>
               <li>
                 <a href="#faq" className="hover:text-[#BAE4F0] transition-colors">
-                  FAQ
+                  {t.nav.faq}
                 </a>
               </li>
               <li>
                 <a href="#contact" className="hover:text-[#BAE4F0] transition-colors">
-                  Contact
+                  {t.nav.contact}
                 </a>
               </li>
             </ul>
@@ -97,12 +97,12 @@ export const Footer: React.FC<FooterProps> = ({ t, onOpenPrivacy, onOpenTerms })
               <span>{t.footer.guidanceServices}</span>
             </h4>
             <ul className="space-y-2 text-xs sm:text-sm text-white/80">
-              <li>Vedic Numerology Reading</li>
-              <li>Intuitive Tarot Consultation</li>
-              <li>Conscious Life Coaching</li>
-              <li>Relationship Compatibility</li>
-              <li>Career & Business Guidance</li>
-              <li>Personal Growth Guidance</li>
+              <li>{t.services.numerology.items[0]}</li>
+              <li>{t.services.tarot.items[0]}</li>
+              <li>{t.services.coaching.items[0]}</li>
+              <li>{t.services.numerology.items[4]}</li>
+              <li>{t.services.numerology.items[3]}</li>
+              <li>{t.services.coaching.items[5]}</li>
             </ul>
           </div>
 
@@ -142,12 +142,20 @@ export const Footer: React.FC<FooterProps> = ({ t, onOpenPrivacy, onOpenTerms })
                 className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-xs font-semibold text-white transition-colors"
               >
                 <Facebook className="w-4 h-4 text-[#BAE4F0]" />
-                <span>Connect on Facebook</span>
+                <span>{t.directConnection.facebookButton || 'Connect on Facebook'}</span>
               </a>
             </div>
 
-            <div className="mt-4 text-[11px] text-white/50">
-              Website: dipti-awasthi.vercel.app
+            <div className="mt-4 pt-3 border-t border-white/10 text-xs text-white/70 flex items-center gap-1.5">
+              <span className="text-white/50">Official Website:</span>
+              <a
+                href="https://dipti-awasthi.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#BAE4F0] hover:text-white font-medium underline underline-offset-2 transition-colors break-all"
+              >
+                dipti-awasthi.vercel.app
+              </a>
             </div>
           </div>
 

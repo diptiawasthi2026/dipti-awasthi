@@ -86,8 +86,8 @@ export const Hero: React.FC<HeroProps> = ({ t, onOpenBooking }) => {
               <Compass className="w-5 h-5" />
             </div>
             <div>
-              <div className="text-xs font-bold text-[#004E9B]">Vedic Numerology</div>
-              <div className="text-[11px] text-[#5D6B78]">Mulank, Bhagyank & cycles</div>
+              <div className="text-xs font-bold text-[#004E9B]">{t.services.numerology.title}</div>
+              <div className="text-[11px] text-[#5D6B78]">{t.numerologySection.driverLabel} & {t.numerologySection.destinyLabel}</div>
             </div>
           </div>
 
@@ -96,8 +96,8 @@ export const Hero: React.FC<HeroProps> = ({ t, onOpenBooking }) => {
               <Eye className="w-5 h-5" />
             </div>
             <div>
-              <div className="text-xs font-bold text-[#004E9B]">Intuitive Tarot</div>
-              <div className="text-[11px] text-[#5D6B78]">Reflective life perspectives</div>
+              <div className="text-xs font-bold text-[#004E9B]">{t.services.tarot.title}</div>
+              <div className="text-[11px] text-[#5D6B78]">{t.tarotSection.cards[0].title}</div>
             </div>
           </div>
 
@@ -106,8 +106,8 @@ export const Hero: React.FC<HeroProps> = ({ t, onOpenBooking }) => {
               <ShieldCheck className="w-5 h-5" />
             </div>
             <div>
-              <div className="text-xs font-bold text-[#004E9B]">Conscious Coaching</div>
-              <div className="text-[11px] text-[#5D6B78]">Clarity & personal growth</div>
+              <div className="text-xs font-bold text-[#004E9B]">{t.services.coaching.title}</div>
+              <div className="text-[11px] text-[#5D6B78]">{t.hero.quickStats.approach}</div>
             </div>
           </div>
         </div>

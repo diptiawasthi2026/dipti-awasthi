@@ -24,7 +24,7 @@ export const WhyChooseSection: React.FC<WhyChooseSectionProps> = ({ t }) => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-1.5 text-xs font-bold tracking-widest text-[#0091B9] uppercase mb-2">
             <Sparkles className="w-3.5 h-3.5 text-[#0091B9]" />
-            <span>Dedicated Spiritual Mentorship</span>
+            <span>{t.byAuthor}</span>
           </div>
           <h2 className="font-heading text-3xl sm:text-4xl font-bold text-[#004E9B] tracking-tight mb-4">
             {t.whyChoose.heading}
