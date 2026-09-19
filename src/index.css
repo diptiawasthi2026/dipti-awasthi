@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+  --brand-teal: #0091B9;
+  --brand-lightblue: #BAE4F0;
+  --brand-deepblue: #004E9B;
+  --brand-orange: #FF6500;
+  --brand-yellow: #FFD500;
+  --brand-bg: #F8FCFE;
+  --brand-dark: #172033;
+  --brand-muted: #5D6B78;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Poppins', 'Noto Sans Devanagari', 'Noto Sans Gurmukhi', 'Noto Sans Bengali', 'Noto Sans Telugu', 'Noto Sans Tamil', 'Noto Sans Malayalam', 'Noto Sans Oriya', system-ui, -apple-system, sans-serif;
+}
+
+.font-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8FCFE;
+}
+::-webkit-scrollbar-thumb {
+  background: #BAE4F0;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0091B9;
+}
+
